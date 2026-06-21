@@ -1,21 +1,15 @@
 /* ===== Variables ===== */
 :root {
-  --bg-primary: #0c1222;
-  --bg-secondary: #111827;
-  --bg-card: #1a2332;
-  --bg-card-hover: #1f2a3d;
-  --text-primary: #f1f5f9;
-  --text-secondary: #94a3b8;
-  --text-muted: #64748b;
-  --accent: #3b82f6;
-  --accent-light: #60a5fa;
-  --accent-glow: rgba(59, 130, 246, 0.25);
-  --warm: #f59e0b;
-  --border: rgba(148, 163, 184, 0.12);
-  --radius: 12px;
-  --radius-lg: 20px;
-  --shadow: 0 4px 24px rgba(0, 0, 0, 0.3);
-  --transition: 0.3s ease;
+  --bg-primary: #0f0f0f;
+  --bg-secondary: #171717;
+  --bg-card: #222222;
+  --text-primary: #ffffff;
+  --text-secondary: #d4d4d4;
+  --accent: #10b981;
+  --accent-light: #34d399;
+  --accent-glow: rgba(255, 107, 0, 0.25);
+
+  --border: rgba(255, 255, 255, 0.08);
 }
 
 /* ===== Reset & Base ===== */
@@ -25,6 +19,25 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.logo {
+  height: 36px;
+  width: auto;
+  display: block;
+}
+
+.nav-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.nav-logo span {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--accent-light);
+  letter-spacing: -0.02em;
 }
 
 html {
@@ -473,7 +486,7 @@ img {
   letter-spacing: -0.02em;
 }
 
-.project-card > p {
+.project-card>p {
   color: var(--text-secondary);
   font-size: 0.95rem;
   margin-bottom: 20px;
@@ -488,6 +501,7 @@ img {
   display: flex;
   gap: 12px;
   margin-top: auto;
+  justify-content: center;
 }
 
 .project-links .btn {
